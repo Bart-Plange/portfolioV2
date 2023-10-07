@@ -1,0 +1,15 @@
+<svg
+  width="100"
+  height="100"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Computer Monitor -->
+  <rect x="20" y="20" width="60" height="40" fill="#4CAF50" />
+
+  <!-- Computer Base -->
+  <rect x="25" y="60" width="50" height="10" fill="#2196F3" />
+
+  <!-- Webcam -->
+  <circle cx="50" cy="30" r="5" fill="#FF5722" />
+</svg>

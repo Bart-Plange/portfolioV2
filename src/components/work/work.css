@@ -1,0 +1,44 @@
+.work-container{
+    position: relative;
+}
+.work-container::before{
+    content: '0.2- Sample Work';
+    position: absolute;
+    font-size: 4rem;
+    z-index: 1;
+    top: -14%;
+    left: 0;
+    color: rgb(65, 65, 231);
+    animation: workchangeColor 5s infinite;
+}
+@keyframes workchangeColor {
+    0% {
+        color: rgb(65, 65, 231);
+        /* Start with the initial color */
+    }
+
+    50% {
+        color: #FF4500;
+        /* Change to your desired color at the midway point */
+    }
+
+    100% {
+        color: #800080;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .work-container::before{
+        font-size: 2.5rem;
+        top: -3.5%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 49;
+}

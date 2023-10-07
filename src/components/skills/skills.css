@@ -1,0 +1,40 @@
+.skills::before{
+    content: '04.-Skills';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4rem;
+    color: blue;
+    z-index: 1;
+    animation: skillschangecolor 5s infinite;
+}
+
+@media (max-width: 425px) {
+    .skills::before {
+        font-size: 3rem;
+        top: -12%;
+    }
+}
+
+@keyframes skillschangecolor {
+    0% {
+        color: blue;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: blue;
+        /* Return to the original color */
+    }
+}

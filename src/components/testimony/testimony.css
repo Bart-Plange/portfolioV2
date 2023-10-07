@@ -1,0 +1,74 @@
+/* Add these styles to your existing testimony.css */
+.testimony {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+
+   
+    --accent: var(--white);
+    color: var(--accent);
+    padding-bottom: 100px;
+}
+#progress {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+    z-index: 100;
+}
+
+circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+    z-index: 100;
+}
+.indicator {
+    stroke: linear-gradient(
+        to right, 
+        var(--yellow), 
+        var(--orange), 
+        var(--red), 
+        var(--pink), var(--purple), var(--dusk), var(--blue), var(--green), var(--sky), var(--white));
+        z-index: 1;
+}
+
+.scrollable-list::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: #fff3;
+    -webkit-border-radius: 1ex;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+}
+
+.scrollable-list::-webkit-scrollbar-corner {
+    background: #fff3;
+}
+
+/* Add this CSS to your existing testimony.css */
+.scrollable-list {
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    /* Change this to 'auto' */
+    padding: 20px 0;
+    flex: 0 0 auto;
+    /* Change this to 'auto' */
+    margin: 0 auto;
+    max-width: 100%;
+    /* Add this line */
+}
+/* Rest of your existing CSS styles */

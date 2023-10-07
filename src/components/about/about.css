@@ -1,0 +1,83 @@
+.about{
+    height: 70vh;
+    padding-top: 1rem;
+}
+@media(max-width: 425px){
+    .about{
+        height: 100vh;
+    }
+}
+
+.about::before{
+    content: '0.3- About Me';
+    position: absolute;
+    font-size: 4rem;
+    top: -18%;
+    left: 0;
+    color: purple;
+    z-index: 1;
+    animation: aboutchangecolor 5s infinite;
+}
+
+@media (max-width: 425px){
+    .about::before{
+        font-size: 3rem;
+        top: -12%;
+    }
+}
+@keyframes aboutchangecolor {
+    0% {
+        color: rgb(65, 65, 231);
+        /* Start with the initial color */
+    }
+
+    50% {
+        color: #FF4500;
+        /* Change to your desired color at the midway point */
+    }
+
+    100% {
+        color: #800080;
+
+    }
+}
+
+/* Add this to your CSS file */
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #6B7280;
+    /* Choose your desired color */
+    border-radius: 50%;
+    margin-top: 5px;
+    /* Adjust the spacing as needed */
+}
+
+.animate-dot {
+    animation: changeColor 5s infinite;
+}
+
+
+@keyframes changeColor {
+
+    0%,
+    100% {
+        background-color: #6b7280;
+        /* Default color (blue-gray) */
+    }
+
+    25% {
+        background-color: #059669;
+        /* Green */
+    }
+
+    50% {
+        background-color: #9333EA;
+        /* Purple */
+    }
+
+    75% {
+        background-color: #F59E0B;
+        /* Orange */
+    }
+}

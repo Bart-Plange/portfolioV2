@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.hero{
+    height: 80vh;
+}
+@media(max-width: 425px){
+    .hero{
+        height: 100vh;
+    }
+}
+
+p span{
+font-family: 'Anton', sans-serif;
+}
+
+
+/* Hero.css */
+@keyframes colorChange {
+
+    0%,
+    100% {
+        color: #2196F3;
+        /* Blue */
+    }
+
+    33% {
+        color: #4CAF50;
+        /* Green */
+    }
+
+    66% {
+        color: #9C27B0;
+        /* Purple */
+    }
+}
+
+@keyframes letterChange {
+
+    0%,
+    100% {
+        color: #2196F3;
+        /* Blue */
+    }
+
+    33% {
+        color: #4CAF50;
+        /* Green */
+    }
+
+    66% {
+        color: #9C27B0;
+        /* Purple */
+    }
+}
+
+.color-changing-letter {
+    animation: letterChange 5s linear infinite;
+    /* Adjust the duration as needed */
+}
+
+.color-changing-text {
+    animation: colorChange 5s linear infinite;
+    /* Adjust the duration as needed */
+}
+
+
+/* Add the following CSS class for the glowing effect */
+.glowing-text {
+    animation: glow 1s infinite alternate;
+    /* Animation properties */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        /* Initial shadow */
+    }
+
+    100% {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        /* Glowing shadow */
+    }
+}
+
+
+/* svg animations */
+.svg-container {
+    position: absolute;
+    animation: bounce 2s infinite;
+    /* Adjust animation properties as needed */
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Adjust the animation distance */
+    }
+}
