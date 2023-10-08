@@ -16,8 +16,8 @@
 
 @media (max-width: 425px){
     .about::before{
-        font-size: 3rem;
-        top: -12%;
+        font-size: 2.7rem;
+        top: -9%;
     }
 }
 @keyframes aboutchangecolor {
