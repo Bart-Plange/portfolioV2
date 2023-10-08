@@ -29,7 +29,7 @@ const Header = () => {
     // Add more mobile menu items here
   ];
   return (
-    <div className="fixed top-0 left-0 w-full border-b border-gray-300 bg-white z-50 dark:bg-darkBackground">
+    <div className="fixed top-0 left-0 w-full border-b border-gray-300 bg-gray-200 z-50 dark:bg-darkBackground">
       <div className="container mx-auto p-4 relative">
         <div className="flex justify-between items-center">
           <div>
