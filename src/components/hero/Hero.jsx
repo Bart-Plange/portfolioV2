@@ -3,7 +3,7 @@ import "./Hero.css"; // Import a CSS file for styling
 
 const Hero = ({ isDarkMode }) => {
   return (
-    <div className={`hero container mx-auto p-4 md:py-24 lg:mt-16 relative ${isDarkMode ? 'dark-glow' : ''}`}>
+    <div className={`hero container mx-auto p-4 py-24 mt-16  relative ${isDarkMode ? 'dark-glow' : ''}`}>
       <div>
         <div className="text-center text-8xl">
           <p className="pb-4">
@@ -17,7 +17,7 @@ const Hero = ({ isDarkMode }) => {
             <span className="color-changing-text">C</span>
             <span className={`text-purple-500 ${isDarkMode ? 'glow' : ''}`}>raft</span>..
           </p>
-          <p className="text-2xl"> Your Ideas to The Web</p>
+          <p className="text-2xl dark:text-blue-400"> Your Ideas to The Web</p>
         </div>
       </div>
     </div>

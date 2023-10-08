@@ -40,7 +40,7 @@ const Skills = () => {
   };
 
   return (
-    <div className='h-screen relative pt-24'>
+    <div className='md:h-screen relative md:pt-24'>
 
     <motion.div
       className='skills container mx-auto py-12'
@@ -222,7 +222,7 @@ const Skills = () => {
           </ul>
         </nav>
       </div>
-      <div style={{ flex: 1, flexDirection: 'row', color: 'orange' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', color: 'orange' }}>
   <AnimatePresence mode='wait'>
     <motion.div
       key={selectedTab.label || "empty"}

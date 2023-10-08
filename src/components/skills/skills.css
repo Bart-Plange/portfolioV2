@@ -12,7 +12,7 @@
 @media (max-width: 425px) {
     .skills::before {
         font-size: 3rem;
-        top: -12%;
+        top: -8%;
     }
 }
 

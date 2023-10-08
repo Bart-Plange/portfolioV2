@@ -1,11 +1,6 @@
 .about{
-    height: 70vh;
     padding-top: 1rem;
-}
-@media(max-width: 425px){
-    .about{
-        height: 100vh;
-    }
+    padding-bottom: 1rem;
 }
 
 .about::before{

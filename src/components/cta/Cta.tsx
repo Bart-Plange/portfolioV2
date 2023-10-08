@@ -3,7 +3,7 @@ import "./cta.css";
 
 const Cta = () => {
   return (
-    <div className="container h-screen py-12 custom-cursor">
+    <div className="container md:h-screen py-12 custom-cursor">
       <div className="h-3/4 flex flex-col md:flex-row relative">
         <div className="md:w-1/2 p-4">
           <p className="text-2xl font-semibold glow-on-hover pb-4 text-blue-600">
