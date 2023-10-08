@@ -42,10 +42,7 @@ const Skills = () => {
   return (
     <div className='md:h-screen relative md:pt-24'>
 
-    <motion.div
-      className='skills container mx-auto py-12'
-      drag  // Enable dragging on the entire container
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} // Define drag constraints
+    <div className='skills container mx-auto py-12'
     >
       <p className='text-orange-600 text-3xl font-bold py-4'>My Skill Set</p>
       <div className='flex flex-col md:items-center'>
@@ -238,7 +235,7 @@ const Skills = () => {
 
     </div>
 
-  </motion.div>
+  </div>
     </div>
 
   );
