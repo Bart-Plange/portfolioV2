@@ -25,7 +25,7 @@ const DarkModeToggle = ({ toggleDarkMode }) => {
   };
 
   return (
-    <div className="fixed top-20 right-10 p-4 flex flex-col items-end z-50 lg:top-24 lg:right-8 md:top-16 md:right-8 sm:top-15 sm:right-7">
+    <div className="fixed top-20 right-2 p-4 flex flex-col items-end z-50 lg:top-24 lg:right-8 md:top-16 sm:top-15 ">
       <div className="dark-mode-toggle">
         {showIcon && (
           <button
