@@ -8,10 +8,10 @@ const Layout = ({ children, toggleDarkMode }) => {
   };
 
   return (
-    <div className="flex dark:bg-darkBackground">
+    <div className="dark:bg-darkBackground">
       {/* Conditionally render SideIcons based on screen size */}
       {!isMobileView() && <SideIcons />}
-      <div className="flex-1 relative">
+      <div>
         <Header />
         {children}
         <Footer />

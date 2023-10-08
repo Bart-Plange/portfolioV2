@@ -114,7 +114,7 @@ const Skills = () => {
             </motion.div>
           </div>
 
-          <div className='h-24 w-96 bg-gray-500 p-4 rounded-lg text-center items-center mt-4 dark:bg-blue-950'>
+          <div className='h-32 md:w-96 bg-gray-500 p-4 rounded-lg text-center items-center mt-4 dark:bg-blue-950'>
             <p className='text-gray-200'>I have used these technologies more recently, some I am so familiar with, and some I studied them but do not use them often.</p>
           </div>
 

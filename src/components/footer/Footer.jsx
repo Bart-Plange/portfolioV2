@@ -1,7 +1,8 @@
-import Logo from '../assets/bartlogo.svg'
+import './footer.css';
+import Logo from '../../assets/bartlogo.svg'
 const Footer = () => {
     return (
-        <div className="bg-blue-600 border-t border-gray-300 pt-12 dark:bg-darkBackground">
+        <div className="footer bg-blue-600 border-t border-gray-300 pt-12 dark:bg-darkBackground">
             <div className="container mx-auto p-4 ">
                 
             <div className='flex flex-col md:flex-row flex-between pb-4'>

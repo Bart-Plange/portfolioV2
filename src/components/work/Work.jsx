@@ -11,7 +11,7 @@ const items = [
   {
     id: 1,
     title: "Rising Star Montessori",
-    subtitle: "Subtitle 1",
+    subtitle: "visit the case to see more",
     imageUrl: RisingStar,
     githubLink: "https://github.com/yourusername/yourrepository1",
     caseLink: "URL_TO_CASE_1",
@@ -20,7 +20,7 @@ const items = [
   {
     id: 2,
     title: "Nyametease Foundation",
-    subtitle: "Subtitle 2",
+    subtitle: "visit the case to see more",
     imageUrl: Nyametease,
     githubLink: "https://github.com/yourusername/yourrepository2",
     caseLink: "URL_TO_CASE_2",
@@ -29,7 +29,7 @@ const items = [
   {
     id: 3,
     title: "Manage Landing Page",
-    subtitle: "Subtitle 2",
+    subtitle: "visit the case to see more",
     imageUrl: Managelp,
     githubLink: "https://github.com/yourusername/yourrepository3",
     caseLink: "URL_TO_CASE_3",
@@ -38,7 +38,7 @@ const items = [
   {
     id: 4,
     title: "Better Solutions Landing Page",
-    subtitle: "Subtitle 2",
+    subtitle: "visit the case to see more",
     imageUrl: Bartwebz,
     githubLink: "https://github.com/yourusername/yourrepository4",
     caseLink: "URL_TO_CASE_4",

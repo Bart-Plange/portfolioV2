@@ -1,0 +1,10 @@
+.footer::before{
+    content: '';
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    background: #000;
+    border-radius: 43% 0% 59% 26% / 50% 32% 33% 35%;
+    z-index: 1;
+}
