@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-.hero{
-    height: 80vh;
-}
-@media(max-width: 425px){
-    .hero{
-        height: 100vh;
-    }
+
+h1 span{
+font-family: 'Anton', sans-serif;
 }
 
-p span{
+
+h1 span{
 font-family: 'Anton', sans-serif;
 }
 
