@@ -18,7 +18,7 @@ const About = () => {
     };
 
     return (
-        <div className="relative about container mx-auto pt-6 mb-24 dark:bg-blue-950">
+        <div id='about' className="relative about container mx-auto pt-6 mb-24 dark:bg-blue-950">
             <div className='flex flex-col md:flex-row'>
                 <div className='md:w-1/3 text-4xl text-orange-700 font-bold md:py-10 md:mt-24'>
                     <p className='p-2'>Over the Years....</p>

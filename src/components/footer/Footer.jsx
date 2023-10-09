@@ -2,8 +2,8 @@ import './footer.css';
 import Logo from '../../assets/bartlogo.svg'
 const Footer = () => {
     return (
-        <div className="footer bg-blue-600 border-t border-gray-300 pt-12 dark:bg-darkBackground">
-            <div className="container mx-auto p-4 ">
+        <div className="relative bg-blue-600 border-t border-gray-300 pt-12 dark:bg-gray-950">
+            <div className="footer container mx-auto p-4 ">
                 
             <div className='flex flex-col md:flex-row flex-between pb-4'>
                 <div className='pb-6'>
@@ -24,25 +24,25 @@ const Footer = () => {
                     {/* menu items */}
                     <div className="flex flex-col">
                         <div className='flex flex-col md:flex-row md:space-x-12 md:pb-8 space-y-4 md:space-y-0'>
-                    <a href="#work" className="text-gray-200 hover:text-gray-900 text-xl dark:text-gray-200 dark:hover:text-orange-500">
+                    <a href="#work" className="text-gray-200 hover:text-gray-900 text-lg dark:text-gray-200 dark:hover:text-orange-500">
                     Work
                     </a>
-                    <a href="#about" className="text-gray-200 text-xl hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500">
+                    <a href="#about" className="text-gray-200 text-lg hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500">
                     About
                     </a>
-                    <a href="#experience" className="text-gray-200 text-xl hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500 pb-4 lg:pb-0">
+                    <a href="#experience" className="text-gray-200 text-lg hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500 pb-4 lg:pb-0">
                     Experience
                     </a>
                         </div>
 
                         <div className='flex flex-col md:flex-row md:space-x-12 md:pb-8 space-y-4 md:space-y-0'>
-                    <a href="#contact" className="text-gray-200 text-xl hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500">
+                    <a href="#contact" className="text-gray-200 text-lg hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500">
                     Contact
                     </a>
-                    <a href="#"
+                    <a href="./Dennis-resume-light.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-200 text-xl hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500 border-gray-600 cursor-pointer"
+                    className="text-gray-200 text-lg hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500 border-gray-600 cursor-pointer"
                     >
                     Resume
                     </a>

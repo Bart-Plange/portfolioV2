@@ -40,7 +40,7 @@ const Skills = () => {
   };
 
   return (
-    <div className='md:h-screen relative md:pt-24'>
+    <div id='experience' className='md:h-screen relative md:pt-24'>
 
     <div className='skills container mx-auto py-12'
     >

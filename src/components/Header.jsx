@@ -84,7 +84,7 @@ const Header = () => {
               Contact
             </a>
             <a
-              href={resumeUrl}
+              href="./Dennis-resume-light.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-white hover:bg-gray-900 border p-1 border-gray-600"
