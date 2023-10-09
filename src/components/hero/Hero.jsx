@@ -24,7 +24,7 @@ const Hero = ({ isDarkMode }) => {
       </div>
       </div>
       <div className="dark:block hidden">
-        <img src={Herobg} alt="hero bg" className="object-fit min-h-5/6 min-w-full absolute top-0 left-0 z-index-[-1]"/>
+        <img src={Herobg} alt="hero bg" className="object-cover min-h-full min-w-full absolute top-0 left-0 z-index-[-1]"/>
       </div>
     </div>
   );
