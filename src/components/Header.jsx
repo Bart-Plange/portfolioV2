@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Import motion and AnimatePresence
 import Logo from "../assets/bartlogo.svg";
@@ -33,7 +34,9 @@ const Header = () => {
       <div className="container mx-auto p-4 relative">
         <div className="flex justify-between items-center">
           <div>
-            <img src={Logo} alt="Logo" className="w-12 object-contain" />
+            <Link to="/">
+              <img src={Logo} alt="Logo" className="w-12 object-contain" />
+            </Link>
           </div>
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
@@ -78,7 +81,7 @@ const Header = () => {
               Experience
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="text-gray-600 dark:text-white hover:underline dark:hover:text-orange-500"
             >
               Contact
