@@ -8,7 +8,7 @@ const Layout = ({ children, toggleDarkMode }) => {
   };
 
   return (
-    <div className="dark:bg-darkBackground">
+    <div className="dark:bg-gray-950">
       {/* Conditionally render SideIcons based on screen size */}
       {!isMobileView() && <SideIcons />}
       <div>

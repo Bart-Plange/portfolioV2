@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
 
                         <div className='flex flex-col md:flex-row md:space-x-12 md:pb-8 space-y-4 md:space-y-0'>
-                    <a href="#contact" className="text-gray-200 text-lg hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500">
+                    <a href="/contact" className="text-gray-200 text-lg hover:text-gray-900 dark:text-gray-200 dark:hover:text-orange-500">
                     Contact
                     </a>
                     <a href="./Dennis-resume-light.pdf"

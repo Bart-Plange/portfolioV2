@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import './contact.css'
+import { useState } from "react";
 import axios from "axios";
-
+import Arrow from '/arrowrightup.svg'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -13,6 +14,8 @@ const Contact = () => {
     email: "",
   });
 
+  const [successMessage, setSuccessMessage] = useState("");
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -24,8 +27,9 @@ const Contact = () => {
   const validateName = (name) => {
     // Name validation: only letters and spaces are allowed
    if (!/^[A-Za-z\s-]+$/.test(name)) {
-    return "Name should only contain letters, spaces, and hyphens";
-  }
+  return `Name should only contain letters,\nspaces, and hyphens`;
+}
+
     return "";
   };
 
@@ -64,9 +68,9 @@ const Contact = () => {
       return;
     }
 
-    try {
-      // Replace with your server endpoint
-      await axios.post("YOUR_SERVER_ENDPOINT", formData);
+     try {
+      // Update the URL to point to your server endpoint
+      await axios.post("http://localhost:3000/api/messages", formData);
 
       // Clear the form and validation errors on successful submission
       setFormData({
@@ -77,7 +81,11 @@ const Contact = () => {
       setValidationErrors({});
 
       // You can also show a success message to the user
-      alert("Message sent successfully!");
+       setSuccessMessage("Message sent successfully!"); 
+       // Clear the success message after 5 seconds
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 5000);
     } catch (error) {
       // Handle errors here
       console.error("Error:", error);
@@ -85,12 +93,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto lg:mt-12 bg-blue-700 dark:bg-gray-950">
-      <div className="md:h-screen flex flex-col md:flex-row space-x-6 py-24 md:p-8 p-4">
-        <div className="md:w-1/3 md:pt-24 mt-12 text-white">
+    <div className=" lg:mt-12 bg-blue-700 dark:bg-gray-900">
+      <div className="container mx-auto md:h-4/5 flex flex-col md:flex-row md:space-x-6 py-24 md:p-8 p-4">
+        <div className="md:w-1/3 md:pt-24 mt-12 text-white lg:px-16">
           <p className="text-4xl">Let's talk.</p>
-          <p className="py-2 pb-12">
-            If you have a project for me, or you want to say <span>hi ...</span>
+          <p className="py-4 pb-12">
+            If you have a project for me, or you want to say <span className='text-orange-500'>hi ...</span>
           </p>
           <p>bartplangedennis@gmail.com</p>
         </div>
@@ -111,7 +119,7 @@ const Contact = () => {
                   onBlur={handleBlur}
                   placeholder="Dennis Bart-Plange"
                   required
-                  className="text-white block w-full p-2 border-b border-gray-200 bg-transparent focus:outline-none focus:border-b-orange-500"
+                  className="text-white block w-full p-2 border-b border-gray-200 bg-transparent focus:outline-none focus:border-b-orange-500 focus:bg-transparent"
                 />
                 {validationErrors.name && (
                   <p className="text-red-500">{validationErrors.name}</p>
@@ -129,7 +137,7 @@ const Contact = () => {
                   onBlur={handleBlur}
                   placeholder="bartplangedennis@gmail.com"
                   required
-                  className="text-white block w-full p-2 border-b border-gray-200 bg-transparent focus:outline-none focus:border-b-orange-500"
+                  className="text-white block w-full p-2 border-b border-gray-200 bg-transparent focus:outline-none focus:border-b-orange-500 focus:bg-transparent"
                 />
                 {validationErrors.email && (
                   <p className="text-red-500">{validationErrors.email}</p>
@@ -154,11 +162,14 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="bg-white text-blue-500 py-2 px-4 rounded-md"
+                className="ContButton flex text-blue-500 py-2 relative"
               >
                 Send Message
+                <img src={Arrow} alt="arrow" className="w-4 ml-4 animate-bounce text-white"/>
               </button>
             </div>
+
+            {successMessage && <p className="text-green-500">{successMessage}</p>} {/* Display success message */}
           </form>
         </div>
       </div>

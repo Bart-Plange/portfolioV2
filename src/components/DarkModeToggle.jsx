@@ -32,11 +32,10 @@ const DarkModeToggle = ({ toggleDarkMode }) => {
             onClick={handleToggleClick}
             className="bg-gray-800 dark:bg-gray-500 text-white rounded-full p-2 mb-2 hover:bg-gray-700 focus:outline-none"
           >
-            {isDarkMode ? <FaMoon /> : <FaSun />}
+            {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
         )}
       </div>
-      <p className="text-gray-800 text-sm">Try the Dark Mode</p>
     </div>
   );
 };

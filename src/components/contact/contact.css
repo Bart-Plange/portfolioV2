@@ -1,0 +1,18 @@
+.ContButton::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: blue;
+    text-decoration: underline;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ContButton:hover::after {
+    transform: scaleX(1);
+    background: blue;
+}

@@ -7,7 +7,7 @@ const Cta = () => {
       <div className="h-3/4 flex flex-col md:flex-row relative">
         <div className="md:w-1/2 p-4">
           <p className="text-2xl font-semibold glow-on-hover pb-4 text-blue-600">
-            What do you want me to build for you?
+           What do you want me to build for you?
           </p>
           <p className="text-base glow-on-hover dark:text-gray-400">
             I have you covered in every way:

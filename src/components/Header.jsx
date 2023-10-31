@@ -17,9 +17,9 @@ const Header = () => {
   const resumeUrl = "/path/to/your/resume.pdf"; // Replace with your actual resume URL
 
    const menuItems = [
-    { label: "Work", href: "#work" },
-    { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
+    { label: "Work", href: "/#work" },
+    { label: "About", href: "/#about" },
+    { label: "Experience", href: "/#experience" },
     { label: "Contact", href: "#contact" },
     {
       label: "Resume",
@@ -90,7 +90,7 @@ const Header = () => {
               href="./Dennis-resume-light.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-white hover:bg-gray-900 border p-1 border-gray-600"
+              className="text-gray-600 dark:text-white hover:bg-orange-500 border p-1 border-gray-600"
             >
               Resume
             </a>

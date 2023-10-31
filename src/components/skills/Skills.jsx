@@ -5,7 +5,7 @@ import { Css, Express, Html, Java, Javascript, Nodejs, React as ReactIcon, Tailw
 
 const Skills = () => {
   const imageVariants = {
-    hover: { scale: 1.1, transition: { duration: 0.3 } },
+    hover: { scale: 1.3, transition: { duration: 0.3 } },
     drag: { cursor: 'grabbing' },
   };
 

@@ -3,7 +3,7 @@ import Herobg from './bg-hero.svg'
 
 const Hero = ({ isDarkMode }) => {
   return (
-    <div>
+    <div className="lg:pt-12">
 
     <div className={`hero md:h-screen container mx-auto p-4 py-24 md:mt-16  relative ${isDarkMode ? 'dark-glow' : ''}`}>
       <div>
@@ -24,7 +24,7 @@ const Hero = ({ isDarkMode }) => {
       </div>
       </div>
       <div className="dark:block hidden">
-        <img src={Herobg} alt="hero bg" className="object-cover min-h-full min-w-full absolute top-0 left-0 z-index-[-1]"/>
+        <img src={Herobg} alt="hero bg" className="object-cover min-h-full min-w-full absolute top-0 left-0 z-index-[-1] "/>
       </div>
     </div>
   );

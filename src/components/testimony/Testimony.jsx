@@ -79,7 +79,7 @@ const Testimony = () => {
             {cardData.map((card, index) => (
               <motion.div
                 key={index}
-                className="card flex-shrink-0 mr-4 w-72 rounded-lg bg-white shadow-md"
+                className="card flex-shrink-0 mr-4 w-64 lg:w-72 rounded-lg bg-gray-900 shadow-md"
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}

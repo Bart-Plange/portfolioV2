@@ -1,7 +1,7 @@
 import { useState, useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import { HomePage, ContactPage } from "./pages";
+import { HomePage, ContactPage, Portfolio } from "./pages";
 import LoadingScreen from './components/LoadingScreen';
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
   // Check local storage or preferred color scheme
   useLayoutEffect(() => {
     const savedMode = localStorage.getItem("mode");
-    setIsDarkMode(savedMode === "light");
+    setIsDarkMode(savedMode === "dark");
 
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
     if (!savedMode && prefersDarkMode.matches) {
@@ -24,14 +24,14 @@ const App = () => {
   }, []);
 
   const toggleDarkMode = () => {
-    const newMode = isDarkMode ? "light" : "dark";
+    const newMode = isDarkMode ? "dark" : "light";
     setIsDarkMode(!isDarkMode);
     localStorage.setItem("mode", newMode);
     document.body.setAttribute("data-mode", newMode);
   };
 
   return (
-    <div className={`App ${isDarkMode ? "dark" : ""}`}>
+    <div className={`App ${isDarkMode ? "light" : ""}`}>
       {isLoading ? (
         <LoadingScreen />
       ) : (
@@ -40,6 +40,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
           </Layout>
         </BrowserRouter>

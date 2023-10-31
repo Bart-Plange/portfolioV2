@@ -2,7 +2,7 @@
     position: relative;
 }
 .work-container::before{
-    content: '0.2- Sample Work';
+    content: '0.2- Work';
     position: absolute;
     font-size: 4rem;
     z-index: 1;
@@ -24,7 +24,7 @@
     }
 
     100% {
-        color: #800080;
+        color: #b3d80d;
         
     }
 }
@@ -40,6 +40,6 @@
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
     z-index: 49;
 }
