@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         'bg-loading': '#4b4b4b',
-        'darkBackground': '#241F2B',
+        'darkBackground': '#161518',
       }
     },
   },

@@ -23,12 +23,16 @@ font-family: 'Anton', sans-serif;
     }
 
     33% {
-        color: #4CAF50;
+        color: #ffff00;
         /* Green */
     }
 
+    75%{
+        color: #800080;
+    }
+
     66% {
-        color: #9C27B0;
+        color: #ffa500;
         /* Purple */
     }
 }
