@@ -17,7 +17,7 @@ const Header = () => {
   const resumeUrl = "/path/to/your/resume.pdf"; // Replace with your actual resume URL
 
    const menuItems = [
-    { label: "Work", href: "/#work" },
+    { label: "Work", href: "/HomePage.jsx#work" },
     { label: "About", href: "/#about" },
     { label: "Experience", href: "/#experience" },
     { label: "Contact", href: "#contact" },
@@ -63,7 +63,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-6">
             <a
-              href="#work"
+              href="/#work"
               className="text-gray-600 dark:text-white hover:underline dark:hover:text-orange-500"
             >
               Work

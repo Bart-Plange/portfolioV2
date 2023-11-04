@@ -7,15 +7,16 @@ import RisingStar from '../../assets/work/risingstar.png'
 import Bartwebz from '../../assets/work/bartwebz.png'
 import Nyametease from '../../assets/work/nyametease.png'
 import Managelp from '../../assets/work/manage-landing-page.png'
+import CaseStudy from '../casestudies/CaseStudy'; // Import the CaseStudy component
 
 const items = [
   {
     id: 1,
     title: "Rising Star Montessori",
     subtitle: "visit the case to see more",
-    ImageUrl: RisingStar,
+    imageUrl: RisingStar,
     githubLink: "https://github.com/Bart-Plange/rising-star-montessori",
-    caseLink: "URL_TO_CASE_1",
+    caseLink: "risingstar",
     siteLink: "URL_TO_SITE_1",
   },
   {
@@ -69,7 +70,7 @@ const Work = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
           {items.map((item) => (
             <motion.div
-              className="grid-item bg-white rounded overflow-hidden shadow-lg dark:bg-blue-950"
+              className="grid-item bg-gray-900 rounded overflow-hidden shadow-lg dark-bg-blue-950"
               key={item.id}
               layoutId={item.id}
               onClick={() => setSelectedId(item.id)}
@@ -83,7 +84,7 @@ const Work = () => {
                 <motion.h5 className="text-gray-600 text-sm">
                   {item.subtitle}
                 </motion.h5>
-                <motion.h2 className="dark:text-orange-500 text-xl font-semibold mt-2">
+                <motion.h2 className="dark-text-orange-500 text-xl font-semibold mt-2">
                   {item.title}
                 </motion.h2>
                 <a
@@ -101,7 +102,7 @@ const Work = () => {
 
         <div className="py-2 text-xl text-white bg-blue-500 md:w-1/6 text-center mt-3">
           <Link to="/portfolio" className="py-3 px-5">
-          more
+            more
           </Link>
         </div>
       </div>
@@ -115,17 +116,17 @@ const Work = () => {
               layoutId={selectedId}
               exit={{ opacity: 0.5 }}
             >
-              <div className="bg-white rounded overflow-hidden shadow-lg max-w-lg p-4 flex flex-col items-center dark:bg-blue-950">
+              <div className="bg-white rounded overflow-hidden shadow-lg max-w-lg p-4 flex flex-col items-center dark-bg-blue-950">
                 <div className="flex justify-between w-full">
                   <button
                     onClick={handlePrevCard}
-                    className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+                    className="bg-blue-500 text-white px-2 py-1 rounded hover-bg-blue-600"
                   >
                     Prev
                   </button>
                   <button
                     onClick={handleNextCard}
-                    className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+                    className="bg-blue-500 text-white px-2 py-1 rounded hover-bg-blue-600"
                   >
                     Next
                   </button>
@@ -136,17 +137,16 @@ const Work = () => {
                   className="w-full h-64 object-contain"
                 />
                 <div className="p-4 text-center">
-                  <motion.h5 className="text-gray-600 text-sm ">
+                  <motion.h5 className="text-gray-600 text-sm">
                     {items[selectedId - 1].subtitle}
                   </motion.h5>
-                  <motion.h2 className="dark:text-orange-500 text-xl font-semibold mt-2">
+                  <motion.h2 className="dark-text-orange-500 text-xl font-semibold mt-2">
                     {items[selectedId - 1].title}
                   </motion.h2>
                 </div>  
                 
-                   {/* items under card */}
-                  <div className="flex flex-row space-x-6 justify-center align-center">
-                    
+                {/* items under card */}
+                <div className="flex flex-row space-x-6 justify-center align-center">
                   <a
                     href={items[selectedId - 1].githubLink}
                     target="_blank"
@@ -155,7 +155,6 @@ const Work = () => {
                   >
                     <img src={GitHubIcon} alt="github" className="w-5 h-5"/> GitHub
                   </a>
-                  
                   <div className="">
                     <a
                       href={items[selectedId - 1].caseLink}
@@ -165,7 +164,6 @@ const Work = () => {
                     >
                       View Case
                     </a>
-                    
                     <a
                       href={items[selectedId - 1].siteLink}
                       target="_blank"
@@ -174,21 +172,22 @@ const Work = () => {
                     >
                       Visit Site
                     </a>
-                    
                   </div>
                   <motion.button
                     onClick={() => setSelectedId(null)}
-                    className="bg-blue-500 text-white px-4 py-2  rounded hover:bg-blue-600"
+                    className="bg-blue-500 text-white px-4 py-2  rounded hover-bg-blue-600"
                   >
                     Close
                   </motion.button>
-                  </div>
-                
+                </div>
               </div>
             </motion.div>
           </>
         )}
       </AnimatePresence>
+
+      {/* Add this code to display the CaseStudy component */}
+      
     </div>
   );
 };
