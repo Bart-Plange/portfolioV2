@@ -4,10 +4,10 @@ import { motion, useScroll } from 'framer-motion';
 
 const cardData = [
   {
-    name: 'John Doe',
-    jobTitle: 'Software Engineer',
+    name: 'Duodu Frank',
+    jobTitle: 'Software Developer',
     picture: 'john-doe.jpg', // Replace with actual image source
-    note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    note: 'I have worked with Dennis for quite sometime and I can justify that, he is very hardworking and pays attention to details.',
   },
   {
     name: 'John Doe',
@@ -48,8 +48,8 @@ const Testimony = () => {
 
   return (
     <div className="testimony container mx-auto py-12">
-      <div className="text-center text-blue-600">
-        <p className="text-3xl font-semibold">Ready!</p>
+      <div className="text-center text-blue-600 ">
+        <p className="text-4xl font-semibold dark:text-orange-500 pb-2">Ready!</p>
         <p className="text-lg">Discover my impact on others</p>
       </div>
       <div className="scrollable-list relative h-full w-full">
@@ -61,7 +61,7 @@ const Testimony = () => {
           className="absolute top-4 left-4"
           style={{ transform: `rotate(${scrollX * 0.5}deg) translateZ(0)` }}
         >
-          <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
+          <circle cx="50" cy="50" r="30" pathLength="1" className="bg-red-500" />
           <motion.circle
             cx="50"
             cy="50"
@@ -93,7 +93,7 @@ const Testimony = () => {
                   <div className="text-center">
                     <h2 className="text-xl font-semibold">{card.name}</h2>
                     <p className="text-gray-600">{card.jobTitle}</p>
-                    <p className="mt-4">{card.note}</p>
+                    <p className="mt-4 text-start">{card.note}</p>
                   </div>
                 </div>
               </motion.div>

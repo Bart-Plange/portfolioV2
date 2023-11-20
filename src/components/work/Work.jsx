@@ -7,7 +7,7 @@ import RisingStar from '../../assets/work/risingstar.png'
 import Bartwebz from '../../assets/work/bartwebz.png'
 import Nyametease from '../../assets/work/nyametease.png'
 import Managelp from '../../assets/work/manage-landing-page.png'
-import CaseStudy from '../casestudies/CaseStudy'; // Import the CaseStudy component
+// import CaseStudy from '../casestudies/CaseStudy'; // Import the CaseStudy component
 
 const items = [
   {
@@ -70,7 +70,7 @@ const Work = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
           {items.map((item) => (
             <motion.div
-              className="grid-item bg-gray-900 rounded overflow-hidden shadow-lg dark-bg-blue-950"
+              className="grid-item dark:bg-gray-900 rounded overflow-hidden shadow-lg"
               key={item.id}
               layoutId={item.id}
               onClick={() => setSelectedId(item.id)}
@@ -84,7 +84,7 @@ const Work = () => {
                 <motion.h5 className="text-gray-600 text-sm">
                   {item.subtitle}
                 </motion.h5>
-                <motion.h2 className="dark-text-orange-500 text-xl font-semibold mt-2">
+                <motion.h2 className="dark:text-orange-500 text-xl font-semibold mt-2">
                   {item.title}
                 </motion.h2>
                 <a
@@ -116,7 +116,7 @@ const Work = () => {
               layoutId={selectedId}
               exit={{ opacity: 0.5 }}
             >
-              <div className="bg-white rounded overflow-hidden shadow-lg max-w-lg p-4 flex flex-col items-center dark-bg-blue-950">
+              <div className="bg-gray-900 rounded overflow-hidden shadow-lg max-w-lg p-4 flex flex-col items-center dark-bg-blue-950">
                 <div className="flex justify-between w-full">
                   <button
                     onClick={handlePrevCard}
@@ -137,10 +137,10 @@ const Work = () => {
                   className="w-full h-64 object-contain"
                 />
                 <div className="p-4 text-center">
-                  <motion.h5 className="text-gray-600 text-sm">
+                  <motion.h5 className="text-gray-400 text-sm">
                     {items[selectedId - 1].subtitle}
                   </motion.h5>
-                  <motion.h2 className="dark-text-orange-500 text-xl font-semibold mt-2">
+                  <motion.h2 className="dark:text-orange-500 text-xl font-semibold mt-2">
                     {items[selectedId - 1].title}
                   </motion.h2>
                 </div>  
@@ -162,7 +162,7 @@ const Work = () => {
                       rel="noopener noreferrer"
                       className="text-blue-500 mr-4"
                     >
-                      View Case
+                      Case
                     </a>
                     <a
                       href={items[selectedId - 1].siteLink}
@@ -170,12 +170,12 @@ const Work = () => {
                       rel="noopener noreferrer"
                       className="text-blue-500"
                     >
-                      Visit Site
+                      Site
                     </a>
                   </div>
                   <motion.button
                     onClick={() => setSelectedId(null)}
-                    className="bg-blue-500 text-white px-4 py-2  rounded hover-bg-blue-600"
+                    className="bg-blue-500 text-white px-2  rounded hover-bg-blue-600"
                   >
                     Close
                   </motion.button>
@@ -185,8 +185,6 @@ const Work = () => {
           </>
         )}
       </AnimatePresence>
-
-      {/* Add this code to display the CaseStudy component */}
       
     </div>
   );

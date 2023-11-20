@@ -15,7 +15,7 @@ const items = [
     githubLink: "https://github.com/yourusername/yourrepository1",
     caseLink: "URL_TO_CASE_1",
     siteLink: "URL_TO_SITE_1",
-    gridColumns: "two", // Set gridColumns to "three" for three columns
+    gridColumns: "three", // Set gridColumns to "three" for three columns
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const items = [
     githubLink: "https://github.com/yourusername/yourrepository4",
     caseLink: "URL_TO_CASE_4",
     siteLink: "URL_TO_SITE_4",
-    gridColumns: "three", // Set gridColumns to "two" for two columns
+    gridColumns: "two", // Set gridColumns to "two" for two columns
   },
   // Add more items with image URLs and links
 ];

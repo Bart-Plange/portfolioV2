@@ -5,7 +5,7 @@ import { Css, Express, Html, Java, Javascript, Nodejs, React as ReactIcon, Tailw
 
 const Skills = () => {
   const imageVariants = {
-    hover: { scale: 1.3, transition: { duration: 0.3 } },
+    hover: { scale: 1.1, transition: { duration: 0.3 } },
     drag: { cursor: 'grabbing' },
   };
 
@@ -40,8 +40,8 @@ const Skills = () => {
   };
 
   return (
-    <div id='experience' className='md:h-screen relative md:pt-24'>
-
+    <div className='bg-indigo-950'>
+    <div id='experience' className='md:h-screen relative md:pt-24 p-4 md:mr-64 md:ml-64 px-auto'>
     <div className='skills container mx-auto py-12'
     >
       <p className='text-orange-600 text-3xl font-bold py-4'>My Skill Set</p>
@@ -231,12 +231,13 @@ const Skills = () => {
       {renderContent(selectedTab.label)}
     </motion.div>
   </AnimatePresence>
-</div>
+ </div>
 
     </div>
 
   </div>
     </div>
+</div>
 
   );
 };

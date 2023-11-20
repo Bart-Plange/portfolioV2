@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Import motion and AnimatePresence
 import Logo from "../assets/bartlogo.svg";
 
@@ -14,12 +14,12 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const resumeUrl = "/path/to/your/resume.pdf"; // Replace with your actual resume URL
+  const resumeUrl = "./Dennis-resume-light.pdf"; // Replace with your actual resume URL
 
    const menuItems = [
-    { label: "Work", href: "/HomePage.jsx#work" },
-    { label: "About", href: "/#about" },
-    { label: "Experience", href: "/#experience" },
+    { label: "Work", href: "#work" },
+    { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
     { label: "Contact", href: "#contact" },
     {
       label: "Resume",
@@ -29,6 +29,19 @@ const Header = () => {
     },
     // Add more mobile menu items here
   ];
+
+  useEffect(() => {
+    // Check the hash in the URL when the component mounts
+    const hash = window.location.hash;
+    if (hash) {
+      // If there's a hash, scroll to the corresponding section
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   return (
     <div className="fixed top-0 left-0 w-full border-b border-gray-300 bg-gray-200 z-50 dark:bg-darkBackground">
       <div className="container mx-auto p-4 relative">
@@ -63,7 +76,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-6">
             <a
-              href="/#work"
+              href="#work"
               className="text-gray-600 dark:text-white hover:underline dark:hover:text-orange-500"
             >
               Work
@@ -110,7 +123,7 @@ const Header = () => {
             >
               <div className="bg-gray-900 bg-opacity-50 absolute inset-0 blur backdrop-blur-lg"></div>
               <motion.div
-                className="w-1/2 bg-white p-4 rounded-lg shadow-lg z-10"
+                className="w-1/2 bg-white dark:bg-darkBackground p-4 rounded-lg shadow-lg z-10"
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ type: "spring", damping: 22, stiffness: 120 }}
@@ -141,7 +154,7 @@ const Header = () => {
                     href={item.href}
                     target={item.target}
                     rel={item.rel}
-                    className="block py-2 text-gray-600 hover:text-gray-900"
+                    className="block py-2 text-blue-500 hover:text-gray-900"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{

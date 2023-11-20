@@ -8,7 +8,7 @@ const SideIcons = () => {
         <a href="https://github.com/Bart-Plange" target="_blank" rel="noopener noreferrer">
           <FaGithub size={32} color="#333" className="mb-6 dark:bg-white rounded-full" />
         </a>
-        <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/dennis-bart-plange-a5b0a1219/" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn size={32} color="#333" className="mb-6 dark:bg-white rounded-full" />
         </a>
       </div>

@@ -3,15 +3,15 @@ import Herobg from './bg-hero.svg'
 
 const Hero = ({ isDarkMode }) => {
   return (
-    <div className="lg:pt-12">
+    <div>
 
     <div className={`hero md:h-screen container mx-auto p-4 py-24 md:mt-16  relative ${isDarkMode ? 'dark-glow' : ''}`}>
       <div>
-        <div className="text-center text-7xl md:text-8xl ">
-          <h1 className="pb-4 lg:leading-relaxed leading-tight">
+        <div className="text-center text-6xl md:text-8xl ">
+          <h1 className="pb-4 lg:leading-loosed leading-tight">
             <span className="color-changing-letter">I </span>
             <span className="color-changing-text">D</span>
-            <span className={`text-blue-500 ${isDarkMode ? 'glow' : ''}`}>evelop,</span>{" "}
+            <span className={`text-blue-500 ${isDarkMode ? 'glow' : ''}`}>evelop,</span>{" "} <br></br>
             <span className="color-changing-letter ">I </span>
             <span className="color-changing-text">D</span>
             <span className={`text-green-500 ${isDarkMode ? 'glow' : ''}`}>esign,</span>{" "}<br />

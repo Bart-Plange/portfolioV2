@@ -23,7 +23,7 @@ const About = () => {
                 <div className='md:w-1/3 text-4xl text-orange-700 font-bold md:py-10 md:mt-24'>
                     <p className='p-2'>Over the Years....</p>
                 </div>
-                <div className='md:w-2/3 text-xl text-blue-800 dark:text-blue-200 text-left py-4 md:pl-4 md:pr-4'>
+                <div className='md:w-2/3 md:text-xl text-blue-800 dark:text-blue-200 text-left py-4 md:pl-4 md:pr-4'>
                     <div className="flex ">
                         <div className={`h-5 w-6 rounded-full mt-2 ${getColor(0)}`} />
                         <p className="ml-4">Hi, I'm Dennis Bart-Plange, and I'm deeply passionate about web development.</p>

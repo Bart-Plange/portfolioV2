@@ -162,7 +162,7 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="ContButton flex text-blue-500 py-2 relative"
+                className="ContButton flex text-white py-2 relative"
               >
                 Send Message
                 <img src={Arrow} alt="arrow" className="w-4 ml-4 animate-bounce text-white"/>

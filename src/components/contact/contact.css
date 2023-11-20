@@ -3,7 +3,7 @@
     position: absolute;
     top: 35px;
     left: 0;
-    background: blue;
+    background: rgb(222, 222, 228);
     text-decoration: underline;
     height: 2px;
     width: 100%;
@@ -14,5 +14,5 @@
 
 .ContButton:hover::after {
     transform: scaleX(1);
-    background: blue;
+    background: rgb(205, 205, 211);
 }
